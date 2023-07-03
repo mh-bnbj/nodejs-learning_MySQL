@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/users.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2 id="users-conatainer-header">Users List</h2>
+        <div class="users-container"></div>
+        <h2 id="user-form-header">Create User</h2>
+        <div class="user-form">
+            <input
+                type="number"
+                class="id"
+                placeholder="id : "
+                style="width: 20%"
+            />
+            <input
+                type="text"
+                class="name"
+                placeholder="name : "
+                style="width: 60%"
+            />
+            <input
+                type="email"
+                class="email"
+                placeholder="email : "
+                style="width: 60%"
+            />
+            <input
+                type="number"
+                class="age"
+                placeholder="age : "
+                style="width: 20%"
+            />
+            <button class="submit" onclick="sendUser()">create</button>
+        </div>
+    </body>
+    <script src="/assets/js/users.js"></script>
+</html>

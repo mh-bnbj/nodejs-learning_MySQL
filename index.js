@@ -1,17 +1,20 @@
 const express = require('express')
 const router = require('./route/index')
 const morgan = require('morgan')
+const e = require('express')
 
 const app = express()
 const PORT = 3000
 
 // app.set('view engine', 'pug')
 app.set('view engine', 'ejs')
+app.engine('html', require('ejs').renderFile)
 
 app.use(morgan('dev'))
 
 app.use(express.static('public'))
 
+app.use('/', express.json())
 app.use('/', router)
 
 app.use((req, res) => {

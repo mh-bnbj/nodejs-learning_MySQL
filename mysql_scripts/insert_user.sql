@@ -4,7 +4,7 @@ INSERT INTO `mydb`.`user`
 `email`,
 `age`)
 VALUES
-(1,
-"mohamad",
-"mohamad@email.com",
-23);
+(6,
+"hosien",
+"hosien@email.com",
+33);
