@@ -34,9 +34,14 @@ const usersPostController = (req, res) => {
             }",${parseInt(req.body.age)}` +
             ');',
         function (error, results) {
-            if (error) console.log(error)
-            console.log('The users are: ', results)
-            res.send(results)
+            if (error) {
+                console.log('error happend')
+                console.log(error)
+                res.status(400).send('bad request')
+            } else {
+                console.log('The users are: ', results)
+                res.send(results)
+            }
         }
     )
 }

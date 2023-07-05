@@ -38,7 +38,8 @@ const sendUser = () => {
             'Content-Type': 'application/json',
         },
     })
-        .then((response) => {
+        .then((response) => response.json())
+        .then((data) => {
             getUsers()
             alert('create user was successful')
             document.querySelector('.user-form>.submit').disabled = false

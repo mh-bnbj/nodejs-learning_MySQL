@@ -7,7 +7,7 @@ h2#users-conatainer-header{
     margin-bottom: -17.5px;
     z-index: 1;
     position: relative;
-    border: 1px solid darkgreen;
+    border: 2px solid darkgreen;
     color: darkgreen;
     border-radius: 10px;
 }
@@ -20,7 +20,7 @@ h2#user-form-header{
     margin-bottom: -17.5px;
     z-index: 1;
     position: relative;
-    border: 1px solid darkred;
+    border: 2px solid darkred;
     color: darkred;
     border-radius: 10px;
 }
@@ -36,6 +36,7 @@ h2#user-form-header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    overflow: auto;
 }
 
 .user-card{
