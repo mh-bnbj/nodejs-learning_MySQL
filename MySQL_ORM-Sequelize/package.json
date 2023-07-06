@@ -1,5 +1,5 @@
 {
-  "name": "express-routing",
+  "name": "nodejs-mysql",
   "version": "1.0.0",
   "description": "This is nodeJs_MySQL project with Sequelize ORM",
   "main": "index.js",
